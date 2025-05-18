@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://example.com/example-framework.js"crossorigin="anonymous"></script> 
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="jeff.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contract">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="closemenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Collage IT Student</p>
+            <h1>Hi, I'm <span>John</span><br>Jefferson From Philippines</h1>
+        </div>  
+    </div>
+
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="jepoy.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am John Jefferson L. Ramos sIT programmer with a strong background in software development, 
+                    specializing in languages like Python, Java, and JavaScript.
+                     I enjoy solving complex problems, building efficient systems, and continuously learning new technologies.
+                      Passionate about clean code and practical solutions, I strive to create software that makes a real impact.</p>
+
+                   <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                   </div>
+                   <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI?UX</U></span><br>Design Web/App interfaces</li>
+                        <li><span>Web Development</U></span><br>Web App Development</li>
+                        <li><span>App Development</U></span><br>Building Android/iOS apps</li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Exploring Operating Systems</U></span><br>Windows, Linux, process management</li>
+                        <li><span>Studying Databases</U></span><br>SQL, database design, normalization</li>
+                        <li><span>Database Management</U></span><br>Gained experience in designing, managing, 
+                            and querying relational databases using MySQL and PostgreSQL.</li>
+                    </ul>
+                   </div>
+                    <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>Bachelor of Science in Information Technology</U></span><br>From Global Reciprocal Collages</li>
+                        <li><span>Relevant Coursework</U></span><br>Database Management,  Web Development, And Software Engineering</li>
+                        <li><span>Core Subjects</U></span><br>Programming (Python, Java, C++)</li>
+                    </ul>
+                   </div>
+            </div>  
+        </div>
+    </div>
+</div>
+<!-------------service--------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Performed routine web application vulnerability assessments using tools like OWASP
+                     ZAP, Burp Suite, and Nmap./p>
+                <a href="#"> Learn more </a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>Collaborated with developers to remediate critical issues
+                     such as SQL Injection, Cross-Site Scripting (XSS), and CSRF 
+                     vulnerabilities discovered in production systems.
+                     Managed and maintained a Web Application Firewall (WAF)
+                      to monitor and block malicious HTTP requests.</p>
+                <a href="#"> Learn more </a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Assisted in creating automated security scripts using Python
+                 and Bash for log analysis, threat detection, and incident response..</p>
+                <a href="#"> Learn more </a>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!--------------portfolio---------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Experience</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="siya.jpg">
+                <div class="layer">
+                    <h3>Creating A Website</h3>
+                    <p>ThResults-driven IT professional with over 3 years of experience in system administration, technical support, and network management. 
+                        Skilled in troubleshooting hardware/software issues, maintaining secure and efficient IT infrastructure, and supporting end-users in fast-paced environments.
+                        Proficient in Windows and Linux systems, Office 365, and basic scripting. Strong communicator with a problem-solving mindset and a passion for technology.
+
+</p>
+                     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="ako.jpg">
+                <div class="layer">
+                    <h3>HTML</h3>
+                    <p>TAs an IT student, learning HTML (HyperText Markup Language) 
+                        marked the beginning of my journey into web development and understanding how the 
+                        internet works.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="eyes.jpeg">    
+                <div class="layer">
+                    <h3>Java Script</Script></h3>
+                    <p>Java Script is a programming language that allows you to add interactivity, logic, and dynamic content
+                         to websites. Unlike HTML (structure) and CSS (style), JavaScript makes websites come alive.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-  square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-------------contact--------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>contact ramosjohnjefferson71@gmail.com</p>
+                <p>09454664806</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="" class="btn">Download Cv</a>
+
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder=" Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Jefferson. Made with by Easy Tutorials</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function openmenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+    
+</body>
+</html>
+Example Domain
